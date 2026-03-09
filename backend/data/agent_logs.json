@@ -1,0 +1,35 @@
+[
+  {
+    "id": "b74d6397",
+    "agent": "resume",
+    "inputs": {
+      "jd_snippet": "i want my resume fixed"
+    },
+    "output": "```json\n{\n  \"ats_score\": 0,\n  \"match_percentage\": 0,\n  \"found_keywords\": [],\n  \"missing_keywords\": [\"AI\", \"Machine Learning\", \"Software Engineering\", \"Python\", \"Data Analysis\", \"Deep Learning\", \"Natural Language Processing\", \"Computer Vision\", \"TensorFlow\", \"PyTorch\", \"SQL\", \"Docker\", \"Kubernetes\", \"AWS\", \"Git\", \"Agile\", \"Scrum\"],\n  \"strong_points\": [],\n  \"gaps\": [\"Lack of education details\", \"No listed skills\", \"No projects or work experience\", \"No professional summary\"],\n  \"rewritten_bullets\":",
+    "rating": null,
+    "created_at": "2026-03-04T22:58:04.741308"
+  },
+  {
+    "id": "fa2a3182",
+    "agent": "interview",
+    "inputs": {
+      "company": "sarvam ai",
+      "role": "ai researcher"
+    },
+    "output": "```json\n{\n  \"company_specific_questions\": [\n    {\n      \"question\": \"Can you describe a project where you applied machine learning techniques to solve a real-world problem?\",\n      \"category\": \"technical\",\n      \"difficulty\": \"medium\",\n      \"why_theyll_ask\": \"To assess your practical experience and ability to apply ML in real scenarios.\",\n      \"model_answer\": \"In my project 'Dia Legal,' I developed a chatbot using natural language processing (NLP) techniques to assist users in understanding le",
+    "rating": null,
+    "created_at": "2026-03-04T22:58:23.359103"
+  },
+  {
+    "id": "346eb8da",
+    "agent": "outreach",
+    "inputs": {
+      "mode": "connection_request",
+      "company": "CoRover",
+      "contact": "CoRover"
+    },
+    "output": "{\n  \"mode\": \"connection_request\",\n  \"channel_variants\": {\n    \"linkedin_note\": {\n      \"char_count\": 295,\n      \"text\": \"Hi CoRover, I've been following CoRover\u2019s innovative work in AI-driven solutions, especially the recent project on chatbot automation. Would love to chat more about the tech stack and challenges you faced.\"\n    },\n    \"linkedin_inmail\": {\n      \"subject\": \"Impressed by CoRover's AI Innovations\",\n      \"body\": \"Hi CoRover,\\n\\nI've been following CoRover\u2019s innovative work in AI-",
+    "rating": null,
+    "created_at": "2026-03-04T23:53:59.680520"
+  }
+]

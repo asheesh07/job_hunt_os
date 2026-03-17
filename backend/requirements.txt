@@ -2,6 +2,8 @@ fastapi
 uvicorn[standard]
 python-dotenv
 huggingface_hub
+httpx
+python-dotenv
 pydantic
 aiofiles
 websockets

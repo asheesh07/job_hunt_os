@@ -1,9 +1,9 @@
-# backend/main.py
-import os
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
-
+import sys
+import os
+sys.path.insert(0, os.path.dirname(__file__))
 load_dotenv()
 
 from models import (

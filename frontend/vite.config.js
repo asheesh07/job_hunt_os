@@ -6,7 +6,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
 
   // Safe fallback (prevents crash)
-  const BACKEND = env.VITE_API_URL || 'http://127.0.0.1:8000'
+  const BACKEND = "https://job-hunt-os.onrender.com"
 
   return {
     plugins: [react()],

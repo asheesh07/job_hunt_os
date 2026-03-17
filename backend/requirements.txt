@@ -9,3 +9,4 @@ aiofiles
 websockets
 schedule
 apscheduler
+python-multipart

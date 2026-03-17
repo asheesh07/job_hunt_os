@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-const BACKEND = 'http://localhost:8000'
+const BACKEND = 'https://job-hunt-os.onrender.com/'
 
 export default defineConfig({
   plugins: [react()],

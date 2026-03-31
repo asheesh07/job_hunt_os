@@ -15,3 +15,4 @@ sounddevice
 TTS
 torch
 numpy
+python-multipart

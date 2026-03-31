@@ -6,3 +6,12 @@ pydantic
 aiofiles
 websockets
 schedule
+apscheduler
+httpx
+faster-whisper
+pyttsx3
+scipy
+sounddevice
+TTS
+torch
+numpy

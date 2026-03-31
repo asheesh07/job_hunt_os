@@ -1,8 +1,5 @@
 # backend/orchestrator.py
-"""
-Master orchestrator — classifies user intent and routes to correct agent(s).
-Supports single-agent tasks and multi-agent workflows.
-"""
+
 import os
 import json, re
 from huggingface_hub import InferenceClient

@@ -8,6 +8,7 @@ import os
 import uuid
 from datetime import datetime
 from typing import Dict, List, Optional
+from profile import DEFAULT_PROFILE
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 os.makedirs(DATA_DIR, exist_ok=True)
@@ -16,21 +17,6 @@ PROFILE_FILE     = os.path.join(DATA_DIR, "profile.json")
 APPLICATIONS_FILE = os.path.join(DATA_DIR, "applications.json")
 AGENT_LOGS_FILE  = os.path.join(DATA_DIR, "agent_logs.json")
 SCOUT_CONFIG_FILE = os.path.join(DATA_DIR, "scout_config.json")
-
-DEFAULT_PROFILE = {
-    "name": "Asheesh",
-    "email": "",
-    "phone": "",
-    "location": "",
-    "resume_text": "",
-    "skills": "",
-    "projects": "",
-    "education": "",
-    "digest_email": "",
-    "digest_subscribed": False,
-    "job_preferences": {},
-}
-
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -73,15 +59,15 @@ def save_application(app: Dict) -> Dict:
     _write(APPLICATIONS_FILE, apps)
     return app
 
-def update_application_status(app_id: str, status: str) -> bool:
+def update_application_status(app_id: str, status: str) -> Optional[Dict]:
     apps = get_applications()
     for a in apps:
         if a.get("id") == app_id:
             a["status"] = status
             a["updated_at"] = datetime.now().isoformat()
             _write(APPLICATIONS_FILE, apps)
-            return True
-    return False
+            return a
+    return None
 
 def delete_application(app_id: str) -> bool:
     apps = get_applications()

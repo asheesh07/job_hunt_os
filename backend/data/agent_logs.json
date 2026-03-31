@@ -6,7 +6,7 @@
       "jd_snippet": "i want my resume fixed"
     },
     "output": "```json\n{\n  \"ats_score\": 0,\n  \"match_percentage\": 0,\n  \"found_keywords\": [],\n  \"missing_keywords\": [\"AI\", \"Machine Learning\", \"Software Engineering\", \"Python\", \"Data Analysis\", \"Deep Learning\", \"Natural Language Processing\", \"Computer Vision\", \"TensorFlow\", \"PyTorch\", \"SQL\", \"Docker\", \"Kubernetes\", \"AWS\", \"Git\", \"Agile\", \"Scrum\"],\n  \"strong_points\": [],\n  \"gaps\": [\"Lack of education details\", \"No listed skills\", \"No projects or work experience\", \"No professional summary\"],\n  \"rewritten_bullets\":",
-    "rating": null,
+    "rating": 1,
     "created_at": "2026-03-04T22:58:04.741308"
   },
   {
@@ -31,5 +31,169 @@
     "output": "{\n  \"mode\": \"connection_request\",\n  \"channel_variants\": {\n    \"linkedin_note\": {\n      \"char_count\": 295,\n      \"text\": \"Hi CoRover, I've been following CoRover\u2019s innovative work in AI-driven solutions, especially the recent project on chatbot automation. Would love to chat more about the tech stack and challenges you faced.\"\n    },\n    \"linkedin_inmail\": {\n      \"subject\": \"Impressed by CoRover's AI Innovations\",\n      \"body\": \"Hi CoRover,\\n\\nI've been following CoRover\u2019s innovative work in AI-",
     "rating": null,
     "created_at": "2026-03-04T23:53:59.680520"
+  },
+  {
+    "id": "16e7715b",
+    "agent": "research",
+    "inputs": {
+      "company": "Sarvam.ai",
+      "role": "AI Researcher"
+    },
+    "output": "```json\n{\n  \"company_overview\": \"Sarvam.ai is an AI-driven analytics platform that helps businesses gain actionable insights from complex data. The company focuses on developing cutting-edge AI solutions to enhance decision-making processes.\",\n  \"founded\": \"2018\",\n  \"size\": \"50-100 employees / Series A\",\n  \"funding\": \"Series A - $10 million raised in 2021\",\n  \"tech_stack\": [\"Python\", \"TensorFlow\", \"Kubernetes\", \"Docker\", \"AWS\"],\n  \"products\": [\"InsightX - AI-powered analytics tool\", \"PredictX - ",
+    "rating": null,
+    "created_at": "2026-03-10T20:06:16.594178"
+  },
+  {
+    "id": "678ac52e",
+    "agent": "resume",
+    "inputs": {
+      "jd_snippet": "hi"
+    },
+    "output": "```json\n{\n  \"ats_score\": 0,\n  \"match_percentage\": 0,\n  \"found_keywords\": [],\n  \"missing_keywords\": [],\n  \"strong_points\": [],\n  \"gaps\": [\"No relevant education, skills, or projects provided\", \"No alignment with the job description\"],\n  \"rewritten_bullets\": [],\n  \"skills_to_add\": [],\n  \"summary_suggestion\": \"A highly motivated and skilled professional with a strong background in [relevant field] and a passion for [specific area of interest]. Proven experience in [key skill or project] and a track",
+    "rating": null,
+    "created_at": "2026-03-10T20:06:40.144343"
+  },
+  {
+    "id": "15116714",
+    "agent": "resume",
+    "inputs": {
+      "jd_snippet": "hi"
+    },
+    "output": "```json\n{\n  \"ats_score\": 0,\n  \"match_percentage\": 0,\n  \"found_keywords\": [],\n  \"missing_keywords\": [],\n  \"strong_points\": [],\n  \"gaps\": [\"No relevant education, skills, or projects provided\", \"No alignment with the job description\"],\n  \"rewritten_bullets\": [],\n  \"skills_to_add\": [],\n  \"summary_suggestion\": \"As the job description is incomplete, it's impossible to provide a tailored summary. Please provide a complete job description.\",\n  \"overall_recommendation\": \"The provided job description and",
+    "rating": null,
+    "created_at": "2026-03-10T20:06:45.351876"
+  },
+  {
+    "id": "bd202c0d",
+    "agent": "interview",
+    "inputs": {
+      "company": "Sarvam.ai",
+      "role": "AI Researcher"
+    },
+    "output": "```json\n{\n  \"company_specific_questions\": [\n    {\n      \"question\": \"Can you describe your experience working with natural language processing (NLP) models, particularly in the context of conversational AI?\",\n      \"category\": \"technical\",\n      \"difficulty\": \"medium\",\n      \"why_theyll_ask\": \"Sarvam.ai focuses on AI-driven solutions, including conversational AI. They want to understand your depth of experience in NLP.\",\n      \"model_answer\": \"In my previous role, I worked extensively with NLP m",
+    "rating": null,
+    "created_at": "2026-03-10T20:07:06.054714"
+  },
+  {
+    "id": "20841ef9",
+    "agent": "resume",
+    "inputs": {
+      "jd_snippet": "Virallens is a forward-thinking, technology-driven organisation dedicated to helping businesses scale, innovate, and lead in the age of Artificial Intelligence. We specialize in building intelligent s"
+    },
+    "output": "```json\n{\n  \"ats_score\": 35,\n  \"match_percentage\": 35,\n  \"found_keywords\": [\"Python\", \"TensorFlow\", \"PyTorch\", \"knowledge graphs\", \"embedding\"],\n  \"missing_keywords\": [\n    \"RAG pipelines\", \"vector search\", \"hybrid retrieval\", \"re-ranking\", \"contextual compression\", \"Milvus\", \"pgvector\", \"FAISS\", \"Weaviate\", \"chunking\", \"encoding strategies\", \"data pipelines\", \"metadata filtering\", \"IR metrics\", \"LLM-specific evaluations\", \"GPT-4\", \"Claude\", \"Llama\", \"quantisation\", \"distillation\", \"Kubernetes\",",
+    "rating": null,
+    "created_at": "2026-03-10T20:09:33.632078"
+  },
+  {
+    "id": "e1cec6ec",
+    "agent": "resume",
+    "inputs": {
+      "jd_snippet": "Virallens is a forward-thinking, technology-driven organisation dedicated to helping businesses scale, innovate, and lead in the age of Artificial Intelligence. We specialize in building intelligent s"
+    },
+    "output": "```json\n{\n  \"ats_score\": 30,\n  \"match_percentage\": 35,\n  \"found_keywords\": [\"Python\", \"TensorFlow\", \"PyTorch\", \"cloud platforms\", \"Docker\", \"Kubernetes\"],\n  \"missing_keywords\": [\n    \"retrieval-augmented generation systems\", \"RAG pipelines\", \"vector search systems\", \"Milvus\", \"pgvector\", \"FAISS\", \"Weaviate\", \"hybrid retrieval\", \"knowledge graphs\", \"Neo4j\", \"RDF\", \"custom schemas\", \"data pipelines\", \"embeddings\", \"metadata filtering\", \"LLMs\", \"GPT-4\", \"Claude\", \"Llama\", \"quantisation\", \"distillat",
+    "rating": null,
+    "created_at": "2026-03-10T20:11:47.463925"
+  },
+  {
+    "id": "2bec7738",
+    "agent": "research",
+    "inputs": {
+      "company": "sarvam ",
+      "role": "ai intern"
+    },
+    "output": "```json\n{\n  \"company_overview\": \"Sarvam is an AI-driven technology company that focuses on developing solutions for personalized learning and content recommendation systems. The company leverages advanced machine learning techniques to enhance user engagement and educational outcomes.\",\n  \"founded\": \"2018\",\n  \"size\": \"50-100 employees / Early-stage\",\n  \"funding\": \"Series A - $10 million\",\n  \"tech_stack\": [\"Python\", \"TensorFlow\", \"Keras\", \"Docker\", \"AWS\"],\n  \"products\": [\"Personalized Learning Pl",
+    "rating": null,
+    "created_at": "2026-03-10T20:13:25.190875"
+  },
+  {
+    "id": "9c58ba72",
+    "agent": "research",
+    "inputs": {
+      "company": "sarvam ",
+      "role": "ai intern"
+    },
+    "output": "{\n  \"company_overview\": \"Sarvam is an AI-driven technology company that focuses on developing innovative solutions for natural language processing (NLP) and machine learning (ML). The company aims to create scalable and efficient AI systems that can be integrated into various industries.\",\n  \"founded\": \"2018\",\n  \"size\": \"50-100 employees / Series A\",\n  \"funding\": \"Raised $10 million in Series A funding in 2021\",\n  \"tech_stack\": [\"Python\", \"TensorFlow\", \"Kubernetes\", \"Docker\", \"AWS\"],\n  \"products",
+    "rating": null,
+    "created_at": "2026-03-10T20:14:52.297955"
+  },
+  {
+    "id": "039dabf8",
+    "agent": "research",
+    "inputs": {
+      "company": "sarvam ",
+      "role": "management role"
+    },
+    "output": "```json\n{\n  \"company_overview\": \"Sarvam is a technology-driven company that focuses on developing innovative solutions for the financial services industry, particularly in the areas of risk management and compliance.\",\n  \"founded\": \"2015\",\n  \"size\": \"50-100 employees / Series A\",\n  \"funding\": \"Raised $10 million in Series A funding in 2022\",\n  \"tech_stack\": [\"Python\", \"Java\", \"Kubernetes\", \"Docker\", \"AWS\"],\n  \"products\": [\"Risk Management Platform\", \"Compliance Monitoring System\"],\n  \"recent_new",
+    "rating": null,
+    "created_at": "2026-03-10T20:16:15.907142"
+  },
+  {
+    "id": "1cb36a27",
+    "agent": "research_outreach_kit",
+    "inputs": {
+      "company": "sarvam",
+      "person": "chandana"
+    },
+    "output": "```json\n{\n  \"subject_lines\": [\n    {\"subject\": \"Exploring AI Opportunities at Sarvam\", \"reasoning\": \"Directly states the intent and the company name, which can grab attention quickly.\"},\n    {\"subject\": \"Innovative Projects at Sarvam: A Perfect Fit for My Skills\", \"reasoning\": \"Highlights the candidate's alignment with the company's innovative projects, showing enthusiasm and relevance.\"},\n    {\"subject\": \"AI Internship: How I Can Contribute to Sarvam's Vision\", \"reasoning\": \"Positions the candi",
+    "rating": null,
+    "created_at": "2026-03-10T20:18:12.695552"
+  },
+  {
+    "id": "234397cc",
+    "agent": "interview",
+    "inputs": {
+      "company": "sarvam",
+      "role": "ai engineer"
+    },
+    "output": "```json\n{\n  \"company_specific_questions\": [\n    {\n      \"question\": \"Can you describe your experience working with AI models, particularly in natural language processing (NLP)?\",\n      \"category\": \"technical\",\n      \"difficulty\": \"medium\",\n      \"why_theyll_ask\": \"To assess your expertise in NLP, which is a key area for Sarvam as an AI-focused company.\",\n      \"model_answer\": \"In my previous role, I worked extensively with NLP models, including developing a chatbot for customer service using RNN",
+    "rating": null,
+    "created_at": "2026-03-10T20:22:02.182889"
+  },
+  {
+    "id": "3c405660",
+    "agent": "skill_gap",
+    "inputs": {
+      "target_role": "ai researcher at sarvam"
+    },
+    "output": "```json\n{\n  \"skills_you_have\": [],\n  \"skills_you_lack\": [\n    {\n      \"skill\": \"Advanced Machine Learning\",\n      \"importance\": \"critical\",\n      \"gap_size\": \"large\",\n      \"why_it_matters\": \"AI research roles require a deep understanding of machine learning algorithms and their applications.\"\n    },\n    {\n      \"skill\": \"Research Methodology\",\n      \"importance\": \"critical\",\n      \"gap_size\": \"large\",\n      \"why_it_matters\": \"Conducting and publishing research requires a strong foundation in re",
+    "rating": null,
+    "created_at": "2026-03-10T20:24:45.133779"
+  },
+  {
+    "id": "87ce273e",
+    "agent": "skill_gap_multi",
+    "inputs": {
+      "roles": [
+        "ai researcher",
+        "ml engineer"
+      ]
+    },
+    "output": "```json\n{\n  \"role_comparison\": [\n    {\n      \"role\": \"AI Researcher\",\n      \"readiness_score\": 20,\n      \"fit_summary\": \"Lacks significant foundational knowledge and practical experience required for AI research.\",\n      \"biggest_gap\": \"Advanced theoretical knowledge in machine learning and deep learning\",\n      \"biggest_strength\": \"No clear strengths based on provided information\",\n      \"time_to_ready\": \"12-18 months\",\n      \"competition_level\": \"very high\"\n    },\n    {\n      \"role\": \"ML Engin",
+    "rating": null,
+    "created_at": "2026-03-10T20:26:59.407973"
+  },
+  {
+    "id": "18aa2c49",
+    "agent": "outreach",
+    "inputs": {
+      "mode": "post_application",
+      "company": "cisco",
+      "contact": "prashanth veer"
+    },
+    "output": "{\n  \"mode\": \"post_application\",\n  \"channel_variants\": {\n    \"linkedin_note\": {\n      \"char_count\": 247,\n      \"text\": \"Hi Prashanth, I applied for the AI Engineer role at Cisco on [DATE]. I\u2019m particularly excited about Cisco\u2019s commitment to innovation, especially in AI-driven networking solutions. My project, Dia Legal, showcases my expertise in multimodal RAG systems and could bring significant value to your team.\"\n    },\n    \"linkedin_inmail\": {\n      \"subject\": \"Excited to Contribute to Cisco",
+    "rating": null,
+    "created_at": "2026-03-26T19:54:30.783922"
+  },
+  {
+    "id": "43e20545",
+    "agent": "outreach_engine",
+    "inputs": {
+      "company": "cisco",
+      "mode": "cold_email",
+      "id": "5073785d"
+    },
+    "output": "{\"patterns\": []}",
+    "rating": null,
+    "created_at": "2026-03-26T19:54:30.794994"
   }
 ]

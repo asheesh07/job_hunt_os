@@ -34,7 +34,10 @@ class ScoutSubscribeRequest(BaseModel):
 
 class ApplicationCreate(BaseModel):
     company: str
+    company_type: Optional[str] = ""
     role: str
+    outreach_method: Optional[str] = ""
+    outreach_id: Optional[str] = ""
     status: str = "Bookmarked"   # Bookmarked → Applied → Interview → Offer → Rejected
     job_url: Optional[str] = ""
     notes: Optional[str] = ""

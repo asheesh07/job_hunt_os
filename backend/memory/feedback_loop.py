@@ -9,7 +9,7 @@ from typing import Dict, Optional
 def get_feedback_analysis(agent: str = None) -> Dict:
     logs = get_agent_logs(agent)
     rated = [l for l in logs if l.get("rating") is not None]
-
+    
     if not rated:
         return {
             "agent": agent or "all",

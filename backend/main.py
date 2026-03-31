@@ -1,9 +1,13 @@
-from fastapi import FastAPI, HTTPException
+import os
+import sys
+import httpx
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
-import sys
-import os
+
 sys.path.insert(0, os.path.dirname(__file__))
+
+from loop_routes import loop_router
 load_dotenv()
 
 from models import (
@@ -26,7 +30,15 @@ from research_routes import research_router
 from resume_routes import resume_router
 from skill_gap_routes import skill_gap_router
 
-app = FastAPI(title="Job Hunt OS", version="2.0.0")
+from contextlib import asynccontextmanager
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    start_scheduler()
+    yield
+    stop_scheduler()
+    
+app = FastAPI(title="Job Hunt OS", version="2.0.0",lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
@@ -41,14 +53,7 @@ app.include_router(outreach_router, prefix="/api/outreach")
 app.include_router(research_router, prefix="/api/research")
 app.include_router(resume_router, prefix="/api/resume")
 app.include_router(skill_gap_router, prefix="/api/skill-gap")
-
-@app.on_event("startup")
-def startup():
-    start_scheduler()
-
-@app.on_event("shutdown")
-def shutdown():
-    stop_scheduler()
+app.include_router(loop_router, prefix="/api/loop")
 
 @app.get("/")
 def health():
@@ -149,9 +154,21 @@ def rate_run(req: RatingRequest):
 def feedback(agent: str = None):
     return get_feedback_analysis(agent)
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+@app.post("/api/hf")
+async def hf_proxy(request: Request):
+    body = await request.json()
+    hf_token = os.environ.get("HF_TOKEN")
+    model = body.pop("model", "mistralai/Mistral-7B-Instruct-v0.3")
+    async with httpx.AsyncClient(timeout=60) as client:
+        resp = await client.post(
+            f"https://api-inference.huggingface.co/models/{model}/v1/chat/completions",
+            headers={
+                "Authorization": f"Bearer {hf_token}",
+                "Content-Type": "application/json",
+            },
+            json=body,
+        )
+    return resp.json()
 
 @app.post("/api/scout/trigger-now")
 def trigger_digest_now():
@@ -159,3 +176,7 @@ def trigger_digest_now():
     from scheduler.daily_digest import trigger_now
     trigger_now()
     return {"triggered": True, "message": "Digest fired. Check server logs."}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=False)
